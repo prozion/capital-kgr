@@ -1,4 +1,4 @@
-communism a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on Russian capital"
+capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on Russian capital"
 	namespaces
 		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
