@@ -1,0 +1,103 @@
+communism a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on Russian capital"
+	namespaces
+		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
+		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
+		owl ns:http://www.w3.org/2002/07/owl#
+		dc ns:http://purl.org/dc/elements/1.1/
+		skos ns:http://www.w3.org/2004/02/skos/core#
+		tabtree ns:https://purl.org/tabtree/core#
+		ta ns:https://purl.org/tabtree/abstract#
+		time ns:https://purl.org/tabtree/time#
+		loc ns:https://purl.org/tabtree/location#
+		pers ns:https://purl.org/tabtree/person#
+		org ns:https://purl.org/tabtree/organization#
+		src ns:https://purl.org/tabtree/source#
+	classes +a:owl/Class +hi-inv-rel:subclass-of
+		BusinessActivity
+		Company
+			ParentCompany
+			Subsidiary
+		Company subclass-of:rdf/Property domain:`Company,Person` range:Share
+		CompanyMetrics subclass-of:rdfs/Literal
+			CompanyMonetaryMetrics subclass-of:MoneyAmount
+				Capitalization
+				Income
+				Revenue
+		ta/Group
+			GroupOfCompanies
+		Mean
+			Share subclass-of:rdfs/Literal d:"Company share, measured in percentages"
+		MoneyAmount subclass-of:rdfs/Literal
+			GUSD
+			GRUB
+			MRUB
+			MUSD
+		Organization subclass-of:org/Organization
+			BusinessGroup
+				Cartel
+				Consortium
+			BusinessUnit eq:org/BusinessUnit
+				BusinessGroupOfPeople subclass-of:GroupOfPeople
+				Corporation subclass-of:`org/GroupOfPeople,Company`
+				CorporateGroup subclass-of:Group
+					Concern
+				Company eq:org/Company
+					Holding
+				Conglomerate part-of:Corporation subclass-of:GroupOfCompanies
+				Monopoly
+			ProductionUnit
+				Enterprise
+			Syndicate subclass-of:`Company,Corporation,BusinessGroupOfPeople`
+			Trust subclass-of:`Corporation,CorporateGroup`
+		Person eq:pers/Person
+			Businessman
+				Billionaire
+		PersonType one-of:`красный_директор,хайтековец,комсомольский_делец,торгаш`
+		[_companies_taxonomy.tree]
+	properties +a:rdf/Property +hi-inv-rel:subproperty-of
+		cap domain:Organization range:Capitalization
+		cash domain:Person range:MoneyAmount
+		city eq-property:loc/City
+		company eq-property:org/company
+		competitor a:owl/SymmetricProperty domain:Businessman range:Businessman
+		country eq-property:loc/country
+		date eq-property:time/date
+		end eq-property:time/end
+		f deabbr:"fortune" domain:Person range:MUSD
+		founder domain:Person range:Company
+		former
+			former-owner domain:Person range:Company
+				former-co-owner
+			former-share domain:Company range:Share
+		from range:`Deal` domain:`Businessman`
+		hq eq-property:org/hq
+		inc domain:Organization range:Income
+		market-share domain:`ProductionUnit,Company` range:Share
+		old-id eq-property:ta/old-id
+		parent domain:Organization range:Organization
+		partner a:owl/SymmetricProperty domain:Businessman range:Businessman
+		part-of eq-property:tabtree/part-of
+		place eq-property:loc/place
+		product domain:ProductionUnit range:Product
+		pt deabbr:"person type" domain:Person range:PersonType
+		raw domain:ProductionUnit range:Product
+		rev domain:Organization range:Revenue
+		share domain:Person range:Company
+			owner
+				co-owner
+			prime-share
+		sold domain:Deal range:Mean
+			share-sold range:Share
+		start eq-property:time/start
+		subsidiary-of domain:Company range:Subsidiary
+		to range:`Deal` domain:`Businessman`
+		unit eq-property:tabtree/unit
+		y eq-property:year
+		year eq-property:time/year
+	individuals
+		[deals.tree]
+		[enterprises.tree]
+		[companies.tree]
+		[people.tree]
+		[sources.tree]
+		; [various-kgr//universities.tree]

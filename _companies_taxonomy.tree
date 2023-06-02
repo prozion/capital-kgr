@@ -1,0 +1,35 @@
+Company
+	FinancialService
+		Bank
+	HardProduction
+		BioPharm d:"Biotechnology and pharmaceutical company"
+		Equipment
+			MedicalEquipment
+			Photolithography
+		Hardware
+			Microchips
+			PCIBoards
+				Videocards
+		RealEstate
+	PensionFund
+	ProfessionalService
+		Analytics
+		Consultancy
+			ITConsultancy
+		Marketing
+			Advertisement
+			DigitalMarketing
+	Publisher
+	RentCompany
+		HostedService
+			DigitalMarketing
+				SearchEngine
+			Webhosting
+	SoftProduction
+		Software d:"Software development"
+			Videogames
+		GraphicalDesign
+			WebDesign
+	TradeCompany
+		Retail
+		ECommerce

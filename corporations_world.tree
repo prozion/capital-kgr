@@ -8,8 +8,8 @@ world date:12.2021 unit:G$ +country:USA url:tyulyagin.ru/ratings/top-kompanij-mi
 	Meta_Facebook cap:902
 	Nvidia cap:685
 	Berkshire_Hathaway cap:645
-	TSMC area:microchip_production country:Taiwan cap:594
-	Tencent area:investments country:China cap:524
+	TSMC a:Microchips country:Taiwan cap:594
+	Tencent a:Conglomerate,Holding,VideogameIndustry country:China cap:524
 	Visa cap:453
 	UnitedHealth cap:450
 	JPMorgan_Chase cap:450
@@ -25,25 +25,25 @@ world date:12.2021 unit:G$ +country:USA url:tyulyagin.ru/ratings/top-kompanij-mi
 	Bank_of_America cap:350
 	Pfizer cap:341
 	Mastercard cap:334
-	Alibaba country:China cap:312
-	ASML area:lithography_equipment country:Netherlands cap:308
+	Alibaba a:ECommerce,Retail country:China cap:312
+	ASML a:Photolithography country:Netherlands cap:308
 	Walt_Disney cap:265
 	Netflix cap:264
 	Broadcom cap:263
 	Adobe cap:261
 	LOreal country:France cap:258
-	Novo_Nordisk area:pharmacy country:Denmark cap:254 
-	Thermo_Fisher_Scientific area:medical_equipment cap:253 d:"оборудование для медицинских и биологических исследований"
+	Novo_Nordisk a:BioPharm country:Denmark cap:254 
+	Thermo_Fisher_Scientific a:MedicalEquipment cap:253 d:"оборудование для медицинских и биологических исследований"
 	Cisco cap:253
 	Toyota country:Japan cap:251
-	Eli_Lilly area:pharmacy cap:250 
+	Eli_Lilly a:BioPharm cap:250 
 	Exxon_Mobil cap:249
 	Oracle cap:248
 	Coca-Cola cap:248
 	Nike cap:246
-	Salesforce area:software cap:244 d:"CRM"
-	Accenture area:IT,consulting country:Ireland cap:243 
-	ICBC area:banking country:China cap:242
+	Salesforce a:Software cap:244 d:"CRM"
+	Accenture a:ITService country:Ireland cap:243 
+	ICBC a:Bank country:China cap:242
 	Costco cap:240
 	Abbott_Laboratories cap:239
 	Pepsico cap:233
@@ -76,8 +76,8 @@ world date:12.2021 unit:G$ +country:USA url:tyulyagin.ru/ratings/top-kompanij-mi
 	Meituan area:SAAS country:China cap:165
 	Lowes_Company cap:163
 	Shopify country:Canada cap:163
-	AMD area:microchips cap:163
-	SAP area:software country:Germany cap:162
+	AMD a:Microchips cap:163
+	SAP a:Software country:Germany cap:162
 	Prosus area:investments country:Netherlands company:OLX cap:159 ; Avito
 	Agricultural_Bank_of_China country:China cap:158
 	Shell country:Netherlands cap:158
