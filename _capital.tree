@@ -12,14 +12,18 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		pers ns:https://purl.org/tabtree/person#
 		org ns:https://purl.org/tabtree/organization#
 		src ns:https://purl.org/tabtree/source#
+		media ns:https://purl.org/tabtree/media#
 	classes +a:owl/Class +hi-inv-rel:subclass-of
+		Brand subclass-of:rdfs/Literal
 		BusinessActivity
+		BusinessOriginType one-of:`красный_директор,хайтековец,комсомолец,челнок`
 		Company
 			ParentCompany
 			Subsidiary
 		Company subclass-of:rdf/Property domain:`Company,Person` range:Share
 		CompanyMetrics subclass-of:rdfs/Literal
 			CompanyMonetaryMetrics subclass-of:MoneyAmount
+				Assets
 				Capitalization
 				Income
 				Revenue
@@ -37,30 +41,61 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 				Cartel
 				Consortium
 			BusinessUnit eq:org/BusinessUnit
+				BusinessGroup
 				BusinessGroupOfPeople subclass-of:GroupOfPeople
 				Corporation subclass-of:`org/GroupOfPeople,Company`
+					StateCorporation subclass-of:StateOrganization
 				CorporateGroup subclass-of:Group
 					Concern
 				Company eq:org/Company
 					Holding
+						VIHolding deabbr:"Vertically Integrated Holding"
 				Conglomerate part-of:Corporation subclass-of:GroupOfCompanies
 				Monopoly
+				Syndicate subclass-of:`Company,Corporation,BusinessGroupOfPeople`
+				TradingUnit
+					ChainStore
+					Store
+						DiscountStore
+				Trust subclass-of:`Corporation,CorporateGroup`
 			ProductionUnit
 				Enterprise
-			Syndicate subclass-of:`Company,Corporation,BusinessGroupOfPeople`
-			Trust subclass-of:`Corporation,CorporateGroup`
+				Factory
+			StateOrganization
+				FederalAgency
+				Ministry
+				SovereignWealthFund
 		Person eq:pers/Person
 			Businessman
 				Billionaire
-		PersonType one-of:`красный_директор,хайтековец,комсомольский_делец,торгаш`
+		Pipeline
+			GasPipeline
+			OilPipeline
+		Post
+		Property
+			Company
+			Brand
+			Factory
+		Resource
+			MineralDeposit
+				GasDeposit
+				OilDeposit
+				OreDeposit
+				CharcoalDeposit
 		[_companies_taxonomy.tree]
 	properties +a:rdf/Property +hi-inv-rel:subproperty-of
+		assets domain:Organization range:Assets
 		cap domain:Organization range:Capitalization
+			ocap d:"Own capital (equity)"
+			mcap d:"Market capitalization"
 		cash domain:Person range:MoneyAmount
+		board domain:Person range:Organization
+			chairman
 		city eq-property:loc/City
 		company eq-property:org/company
 		competitor a:owl/SymmetricProperty domain:Businessman range:Businessman
 		country eq-property:loc/country
+		current-person domain:Post range:Person
 		date eq-property:time/date
 		end eq-property:time/end
 		f deabbr:"fortune" domain:Person range:MUSD
@@ -72,17 +107,31 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		from range:`Deal` domain:`Businessman`
 		hq eq-property:org/hq
 		inc domain:Organization range:Income
+			oinc d:"Operational income - earnings before interest and taxes"
+			pinc d:"Pure income (net income)"
+		license domain:BusinessUnit range:Resource
+		manager domain:Person range:Organization
+			director
+			president 
 		market-share domain:`ProductionUnit,Company` range:Share
+		n subproperty-of:ta/metrics domain:Organization
+			branches-n domain:ChainStore
 		old-id eq-property:ta/old-id
+		operator domain:Pipeline range:Company
+		owned-by domain:Property range:Organization
 		parent domain:Organization range:Organization
 		partner a:owl/SymmetricProperty domain:Businessman range:Businessman
 		part-of eq-property:tabtree/part-of
 		place eq-property:loc/place
 		product domain:ProductionUnit range:Product
-		pt deabbr:"person type" domain:Person range:PersonType
+		pt deabbr:"person type" domain:Person range:BusinessOriginType
 		raw domain:ProductionUnit range:Product
+		rem eq-property:tabtree/rem
 		rev domain:Organization range:Revenue
-		share domain:Person range:Company
+		s eq-property:src/source
+			s-wiki
+		s-url subproperty-of:s,media/url
+		share domain:`Person,Company` range:Company
 			owner
 				co-owner
 			prime-share
@@ -92,6 +141,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		subsidiary-of domain:Company range:Subsidiary
 		to range:`Deal` domain:`Businessman`
 		unit eq-property:tabtree/unit
+		used-by domain:MineralDeposit range:Company
 		y eq-property:year
 		year eq-property:time/year
 	individuals
