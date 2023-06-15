@@ -13,6 +13,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		org ns:https://purl.org/tabtree/organization#
 		src ns:https://purl.org/tabtree/source#
 		media ns:https://purl.org/tabtree/media#
+		geo ns:https://purl.org/geography#
 	classes +a:owl/Class +hi-inv-rel:subclass-of
 		Brand subclass-of:rdfs/Literal
 		BusinessActivity
@@ -31,6 +32,30 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 			GroupOfCompanies
 		Mean
 			Share subclass-of:rdfs/Literal d:"Company share, measured in percentages"
+		MeanOfProductDistribution
+			Transport
+				AirTransport
+					Airplane
+				RoadTransport
+					Truck
+				RailroadTransport
+					Train
+				WaterTransport
+					Ship
+			TransportRoute
+				ArtificialTransportRoute
+					Road
+					Railroad
+					Channel
+			TransportHub
+				Airport
+				Port
+					SeaPort
+					InlandPort
+				Station
+			Warehouse
+				GrainElevator
+			Store
 		MoneyAmount subclass-of:rdfs/Literal
 			GUSD
 			GRUB
@@ -52,19 +77,32 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 						VIHolding deabbr:"Vertically Integrated Holding"
 				Conglomerate part-of:Corporation subclass-of:GroupOfCompanies
 				Monopoly
+				StoreUnit
+					GrainElevator
 				Syndicate subclass-of:`Company,Corporation,BusinessGroupOfPeople`
 				TradingUnit
 					ChainStore
 					Store
 						DiscountStore
 				Trust subclass-of:`Corporation,CorporateGroup`
+			LogisticUnit
+				TransportHub
+				TransportOperator
+			MediaUnit
 			ProductionUnit
-				Enterprise
 				Factory
+				Mine
+			ResearchUnit
+				AnalyticalCenter
+				DepositExplorationCompany
+				DesignDepartment
+				ResearchInstitute
+			TradeUnit
 			StateOrganization
 				FederalAgency
 				Ministry
-				SovereignWealthFund
+				StateFund
+					SovereignWealthFund
 		Person eq:pers/Person
 			Businessman
 				Billionaire
@@ -72,6 +110,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 			GasPipeline
 			OilPipeline
 		Post
+		Product
 		Property
 			Company
 			Brand
@@ -104,12 +143,15 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 			former-owner domain:Person range:Company
 				former-co-owner
 			former-share domain:Company range:Share
+		former-id eq-property:ta/former-id
 		from range:`Deal` domain:`Businessman`
 		hq eq-property:org/hq
 		inc domain:Organization range:Income
 			oinc d:"Operational income - earnings before interest and taxes"
 			pinc d:"Pure income (net income)"
+		lat eq-property:loc/lat
 		license domain:BusinessUnit range:Resource
+		lon eq-property:loc/lon
 		manager domain:Person range:Organization
 			director
 			president 
@@ -123,6 +165,9 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		partner a:owl/SymmetricProperty domain:Businessman range:Businessman
 		part-of eq-property:tabtree/part-of
 		place eq-property:loc/place
+		pop eq-property:population
+		population domain:loc/City range:rdfs/Literal
+		prodcap domain:Factory range:Factory d:"uses production lines (capacities) of a targeted factory"
 		product domain:ProductionUnit range:Product
 		pt deabbr:"person type" domain:Person range:BusinessOriginType
 		raw domain:ProductionUnit range:Product
@@ -138,6 +183,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		sold domain:Deal range:Mean
 			share-sold range:Share
 		start eq-property:time/start
+		stop subproperty-of:end-property:time/stop
 		subsidiary-of domain:Company range:Subsidiary
 		to range:`Deal` domain:`Businessman`
 		unit eq-property:tabtree/unit
@@ -149,5 +195,5 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		[enterprises.tree]
 		[companies.tree]
 		[people.tree]
+		; [places_russia.tree]
 		[sources.tree]
-		; [various-kgr//universities.tree]
