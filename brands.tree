@@ -1,53 +1,86 @@
-brands
-	Бабкины_семечки a:Brand owned-by:KDV
-	Балтимор a:Brand owned-by:KDV
-	Билайн a:Brand owned-by:ВымпелКом
-	Бомбастер a:Brand owned-by:KDV
-	Бонди a:Brand owned-by:KDV
-	Галерея_вкусов a:Brand owned-by:KDV
-	Зеленый_попугай a:Brand owned-by:KDV
-	Золотая_Чайхана a:Brand owned-by:KDV
-	Киевстар a:Brand owned-by:ВымпелКом
-	Кириешки a:Brand owned-by:KDV
-	Крошка_Лёва a:Brand owned-by:KDV
-	Крут_Фрут a:Brand owned-by:KDV
-	Мачо_Хит a:Brand owned-by:KDV
-	Маяма a:Brand owned-by:KDV
-	Морские a:Brand owned-by:KDV
-	Мэлори a:Brand owned-by:KDV
-	Озёрский_сувенир a:Brand owned-by:KDV
-	Ореховичи a:Brand owned-by:KDV
-	Ригла a:Brand owned-by:Протек
-	Своя_Мельница a:Brand owned-by:KDV
-	Фруктовичи a:Brand owned-by:KDV
-	Хрустящий_картофель a:Brand owned-by:KDV
-	Чипсоны a:Brand owned-by:KDV
-	Яшкино a:Brand owned-by:KDV
-	Babyfox a:Brand owned-by:KDV
-	BEERка a:Brand owned-by:KDV
-	Bottega_del_Sole a:Brand owned-by:KDV
-	Calve a:Brand owned-by:KDV
-	Djazzy a:Brand owned-by:KDV
-	El_Alino a:Brand owned-by:KDV
-	Etre a:Brand owned-by:KDV
-	Fan a:Brand owned-by:KDV
-	Flint a:Brand owned-by:KDV
-	Forsite a:Brand owned-by:KDV
-	Gardelli a:Brand owned-by:KDV
-	Impulse a:Brand owned-by:KDV
-	Krutonoff a:Brand owned-by:KDV
-	Lifely a:Brand owned-by:KDV
-	Maestro_Gusten a:Brand owned-by:KDV
-	Medino a:Brand owned-by:KDV
-	Mini_Free a:Brand owned-by:KDV
-	Nina_Farina a:Brand owned-by:KDV
-	Nut_story a:Brand owned-by:KDV
-	Orascom_Telecom a:Brand owned-by:ВымпелКом
-	OZera name:"O'Zera" a:Brand owned-by:KDV
-	PROчипсы a:Brand owned-by:KDV
-	Smart_formula a:Brand owned-by:KDV
-	Tondi a:Brand owned-by:KDV
-	Verano a:Brand owned-by:KDV
-	Wind a:Brand owned-by:ВымпелКом
-	Yota a:Brand owned-by:KDV
-	3_корочки a:Brand owned-by:KDV
+by-company
+	Ливиз brand:Дипломат,Синопская_56/58,Гжелка,Пятизвёздная,Охта,Санкт-Петербург,Россиянка,Менделеев
+	Москворецкий_пивоваренный_завод brand:Москворецкое,Любитьельское,Русь,Степное,Берег,Спартаковское,Посадское,Малышев,Гонец,Рауш,Легионер
+	Солнечные_продукты brand:Московский_Провансаль,Саратовский_Провансаль,Новосибирский_Провансаль,Спред_Россиянка,Горчица_Столичная,Я_люблю_готовить
+brands +a:Brand
+	Бабкины_семечки owned-by:KDV
+	Балтимор owned-by:KDV
+	Билайн owned-by:ВымпелКом
+	Бомбастер owned-by:KDV
+	Бонди owned-by:KDV
+	Галерея_вкусов owned-by:KDV
+	Зеленый_попугай owned-by:KDV
+	Золотая_Чайхана owned-by:KDV
+	Киевстар owned-by:ВымпелКом
+	Кириешки owned-by:KDV
+	Крошка_Лёва owned-by:KDV
+	Крут_Фрут owned-by:KDV
+	Лепесток owned-by:Кимрская_фабрика_имени_Горького
+	Мачо_Хит owned-by:KDV
+	Маяма owned-by:KDV
+	Молочная_легенда owned-by:Казьминский_молочный_комбинат
+	Морские owned-by:KDV
+	Мэлори owned-by:KDV
+	Озёрский_сувенир owned-by:KDV
+	Ореховичи owned-by:KDV
+	Ригла owned-by:Протек
+	Своя_Мельница owned-by:KDV
+	Фруктовичи owned-by:KDV
+	Хрустящий_картофель owned-by:KDV
+	Чипсоны owned-by:KDV
+	Яшкино owned-by:KDV
+	Babyfox owned-by:KDV
+	Baikal owned-by:Ижевский_механический_завод
+	BEERка owned-by:KDV
+	Bottega_del_Sole owned-by:KDV
+	Calve owned-by:KDV
+	Djazzy owned-by:KDV
+	El_Alino owned-by:KDV
+	Etre owned-by:KDV
+	Fan owned-by:KDV
+	Flint owned-by:KDV
+	Forsite owned-by:KDV
+	Gardelli owned-by:KDV
+	IEK owned-by:ИЭК_Холдинг
+	LEDEL owned-by:ИЭК_Холдинг
+	MasterSCADA owned-by:ИЭК_Холдинг
+	GENERICA owned-by:ИЭК_Холдинг
+	Impulse owned-by:KDV
+	ITK owned-by:ИЭК_Холдинг
+	Krutonoff owned-by:KDV
+	Lifely owned-by:KDV
+	Maestro_Gusten owned-by:KDV
+	Medino owned-by:KDV
+	Mini_Free owned-by:KDV
+	Nina_Farina owned-by:KDV
+	Nut_story owned-by:KDV
+	ONI owned-by:ИЭК_Холдинг
+	Orascom_Telecom owned-by:ВымпелКом
+	OZera name:"O'Zera" owned-by:KDV
+	PROчипсы owned-by:KDV
+	Smart_formula owned-by:KDV
+	Tondi owned-by:KDV
+	Verano owned-by:KDV
+	Wind owned-by:ВымпелКом
+	Yota owned-by:KDV
+	3_корочки owned-by:KDV
+	Золотая Лилия owned-by:Конти-Рус
+	Живинка owned-by:Конти-Рус
+	Timi owned-by:Конти-Рус
+	Bonjour owned-by:Конти-Рус
+	Супер-Контик owned-by:Конти-Рус
+	Жигули owned-by:АвтоВАЗ
+	Спутник owned-by:АвтоВАЗ
+	Samara owned-by:АвтоВАЗ
+	Ока owned-by:АвтоВАЗ
+	Любимый_сад owned-by:Вимм-Билль-Данн
+	Домик_в_деревне owned-by:Вимм-Билль-Данн
+	Веселый_Молочник owned-by:Вимм-Билль-Данн
+	Агуша owned-by:Вимм-Билль-Данн
+	J-7 owned-by:Вимм-Билль-Данн
+	Вкуснотеево owned-by:Молвест
+	Иван_Поддубный owned-by:Молвест
+	Нежный_возраст owned-by:Молвест
+	Фруате owned-by:Молвест
+	Волжские_просторы owned-by:Молвест
+	Кубанский_хуторок owned-by:Молвест

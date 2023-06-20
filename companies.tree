@@ -21,6 +21,8 @@ companies +a:Company
 	Газпром_нефтехим_Салават w:8726^year:2021
 	Газпром_энергохолдинг ТГК-1:51.79%^year:2021
 	Данон_Россия rev:93G w:6.3K
+	Донецкуголь hq:Донецк start:1975
+	Донской_табак hq:Ростов-на-Дону start:1857 rev:13.78G^year:2018,38.87G^year:2020 pinc:-9.86G^year:2018,4.3G^year:20
 	Еврохим ocap:6.4G$ rev:10.2G$ oinc:3.4G$ pinc:2.856G$ w:27K
 	ЕЖК rev:65G w:1320
 	Илим rev:123.4G inc:0.81G w:14845 ; несовпадение по n сотрудников
@@ -47,6 +49,7 @@ companies +a:Company
 	Московский_метрополитен rev:108G pinc:-3G^year:2017 w:53K^year:2017
 	Мосхимфармпрепараты w:600
 	МТС ocap:14.6G rev:534G oinc:118G pinc:64.3G assets:1020G mcap:683G^year:2021 w:58K^year:2020
+	Настюша hq:Москва start:1992 end:2019
 	Нацимбио w:5K
 	Нижегородский_масло-жировой_комбинат abbr:НМЖК rev:62G w:1.4K
 	Нижфарм rev:25G pinc:2.8G
@@ -61,6 +64,7 @@ companies +a:Company
 	Орими_Трэйд rev:45.7G w:342
 	Останкино rev:59.4G w:3K
 	Продимекс rev:80.6G w:17K
+	Промсвязьбанк abbr:ПСБ acap:175.3G ocap:354.4G pinc:30.4G assets:5T^year:2022 w:15200^year:2020
 	Протек cap:136G^year:2017 rev:258G^year:2017 inc:6G^year:2017 w:18K
 	РЖД rev:2500G^year:2022^s:W inc:50.7G^year:2022^s:W w:711K^year:2019^s:W
 	РН-НефтьКапиталИнвест Роснефть:10.36%^s:БВ2021
@@ -78,7 +82,7 @@ companies +a:Company
 	РусНИТИ hq:Челябинск start:2007
 	Русская_платина w:1.8K
 	Сбербанк ocap:5810G^year:2022 oinc:1390G pinc:271G assets:41900G w:285.6K s:5л 
-	Северсталь ocap:4.21G$ rev:11.4G$ oinc:5.32G$ pinc:4.08G$ assets:8.67G$ mcap:1270G^year:2021 w:50K^2021
+	Северсталь ocap:4.21G$ rev:11.4G$ oinc:5.32G$ pinc:4.08G$ assets:8.67G$ mcap:1270G^year:2021 w:50K^year:2021
 	Сеть_гипермаркетов_Самбери rev:3.5G w:<500
 	Сибур ocap:869G rev:731^year:2021 pinc:243G assets:1577G w:23K
 	Синара hq:Екатеринбург w:34.5K
@@ -100,9 +104,11 @@ companies +a:Company
 	Эфко rev:112G pinc:2G w:17K
 	Юг_Руси rev:6G
 	Ямал_СПГ ocap:94.1G rev:13.8G oinc:77.2G pinc:68.4G assets:1610G^year:2017
+	Янта s-url:yantacom.ru/company
 	Coalco_Московская_область type:Land sq:17K
 	IT_One w:1.5K
 	KDV rev:213G w:2.2K
 	NT-MDT
 	Solvay ocap:8GE rev:11.4GE
 	VK former-id:Mail.ru_Group^end:10.2021,Digital_Sky_Technologies^end:2010 ocap:170G rev:126G oinc:-96.6G pinc:-15.7G assets:298G mcap:474G w:8842
+	Магнезит place:Сатка start:1901

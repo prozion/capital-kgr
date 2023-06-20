@@ -1,0 +1,9 @@
+торговые_объекты +a:TradeUnit
+	магазин a:skip +a:Store
+		книжный_магазин a:skip +a:BookStore
+			Все_свободны place:Санкт-Петербург start:2011
+		Елисеевский place:Москва start:1901
+	торговый_центр a:skip +a:ShoppingMall
+		Вятка-ЦУМ place:Киров start:1971
+		ГУМ
+	рынок a:skip +a:Market
