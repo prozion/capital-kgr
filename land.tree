@@ -2,15 +2,16 @@
 	Coalco_Московская_область
 месторождения
 	Бованенковское_месторождение a:GasDeposit used-by:Газпром
-	Ватьёганское_месторождение a:OilDeposit used-by:Лукойл
+	Ватьеганское_месторождение a:OilDeposit used-by:Лукойл
 	Верхнекамское_месторождение_калийно-магниевых_солей a:KDeposit,MgDeposit used-by:Уралкалий
 	Заполярное_месторождение a:GasDeposit used-by:Газпром
 	Ковыткинское_месторождение a:GasDeposit used-by:Газпром
 	Когалымское_месторождение a:OilDeposit used-by:Лукойл
 	Красноленинский_свод_месторождений a:MineralDeposit used-by:РН-Няганьнефтегаз
+	Кубака a:GoldDeposit,SilverDeposit used-by:Омолонская_золоторудная_компания
 	Памятно-Сасовское_месторождение a:OilDeposit used-by:Лукойл
 	Повховское_месторождение a:OilDeposit used-by:Лукойл
-	Покачёвское_месторождение a:OilDeposit used-by:Лукойл
+	Покачевское_месторождение a:OilDeposit used-by:Лукойл
 	Приразломное_месторождение a:GasDeposit used-by:Газпром
 	Сахалин-3 a:GasDeposit used-by:Газпром
 	Северо-Врангелевское_месторождение a:GasDeposit used-by:Газпром,Новатэк

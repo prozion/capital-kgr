@@ -136,6 +136,8 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 				MgDeposit
 				OilDeposit
 				OreDeposit
+					GoldDeposit
+					SilverDeposit
 		[_companies_taxonomy.tree]
 	properties +a:rdf/Property +hi-inv-rel:subproperty-of
 		abbr eq-property:owl/equivalentProperty
