@@ -1,0 +1,13 @@
+MineralDeposit
+	GasDeposit
+	CoalDeposit
+		LigniteDeposit
+		CharcoalDeposit
+		AnthraciteDeposit
+		ShungiteDeposit
+	KDeposit
+	MgDeposit
+	OilDeposit
+	OreDeposit
+		GoldDeposit
+		SilverDeposit

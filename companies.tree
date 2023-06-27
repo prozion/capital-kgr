@@ -16,7 +16,7 @@ companies +a:Company
 	Великолукский_мясокомбинат rev:43G w:2417
 	ВТБ ocap:1723G pinc:327.4G assets:20860G w:79217 owner:Банк_Москвы^end:2016 prime-share:ФК_Динамо^end:02.2022
 	ВымпелКом rev:322.1G pinc:27G^year:2018 w:21.7K^year:2017
-	ВЭБ.РФ former-id:Внешэкономбанк,Внешторгбанк_СССР hq:Москва start:1922 w:12722^year:2021 pinc:8.4G^year:2020 assets:3406G^year:2020
+	ВЭБ.РФ former-id:Внешэкономбанк sid:Внешторгбанк_СССР hq:Москва start:1922 w:12722^year:2021 pinc:8.4G^year:2020 assets:3406G^year:2020
 	Газпром ocap:16867G^year:2021 rev:10241G oinc:2411G pinc:2093G assets:27047G mcap:7120G^year:2022 w:468K
 	Газпромбанк ocap:739.3G pinc:56G assets:7530G w:19.5K
 	Газпром_нефтехим_Салават w:8726^year:2021
@@ -79,6 +79,7 @@ companies +a:Company
 	Россиум rev:139G inc:17.8G
 	Ростелеком ocap:227G rev:580G oinc:73.7G pinc:31.8G assets:1100G^year:2021 w:111.6K
 	Ростех rev:1770G^year:2019 oinc:268G^year:2016 pinc:179G^year:2019 w:589200
+	Ростовуголь place:Шахты start:1938 end:2009
 	Русагро ocap:148G rev:223G oinc:42.6G pinc:41.4G
 	Русал ocap:6.54G$ rev:8.57G$ oinc:0.279G$ pinc:0.759G$ assets:17.4G$^year:2020 w:64K^year:2018
 	РусГидро ocap:629G rev:406G oinc:57.3G pinc:42.1G assets:930G mcap:326G^year:2021 w:65.7K^year:2021
@@ -87,6 +88,7 @@ companies +a:Company
 	Сбербанк ocap:5810G^year:2022 oinc:1390G pinc:271G assets:41900G w:285.6K s:5л 
 	Северсталь ocap:4.21G$ rev:11.4G$ oinc:5.32G$ pinc:4.08G$ assets:8.67G$ mcap:1270G^year:2021 w:50K^year:2021
 	Сеть_гипермаркетов_Самбери rev:3.5G w:<500
+	Сибметаллургмонтаж hq:Новокузнецк start:1958
 	Сибур ocap:869G rev:731^year:2021 pinc:243G assets:1577G w:23K
 	Синара hq:Екатеринбург w:34.5K
 	Славнефть rev:214.5G^year:2016 oinc:36.13G pinc:-10.28G
@@ -116,3 +118,7 @@ companies +a:Company
 	Stada hq:Bad_Vilbel rev:3.25GE pinc:0.264GE^year:2021 w:12520
 	VK former-id:Mail.ru_Group^end:10.2021,Digital_Sky_Technologies^end:2010 ocap:170G rev:126G oinc:-96.6G pinc:-15.7G assets:298G mcap:474G w:8842
 	Магнезит hq:Сатка start:1901
+	Palfinger hq:Зальцбург start:1932
+	Whirlpool hq:Benton_Harbor start:1911 w:92K^year:2018 ocap:2.291G$^year:2018 rev:21G$^year:2018 oinc:279M$^year:2018 pinc:-159M$^year:2018 assets:18.347G$^year:2018 
+	Сибирский_цемент abbr:Сибцем hq:Кемерово start:2004
+	Третий_парк hq:Санкт-Петербург

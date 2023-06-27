@@ -9,6 +9,7 @@
 	Когалымское_месторождение a:OilDeposit used-by:Лукойл
 	Красноленинский_свод_месторождений a:MineralDeposit used-by:РН-Няганьнефтегаз
 	Кубака a:GoldDeposit,SilverDeposit used-by:Омолонская_золоторудная_компания
+	Мягрозерское_месторождение a:ShungiteDeposit
 	Памятно-Сасовское_месторождение a:OilDeposit used-by:Лукойл
 	Повховское_месторождение a:OilDeposit used-by:Лукойл
 	Покачевское_месторождение a:OilDeposit used-by:Лукойл

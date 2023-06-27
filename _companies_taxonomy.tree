@@ -1,6 +1,7 @@
 Company
 	FinancialServiceCompany
 		Bank
+	DataCenter
 	HardProductionCompany
 		BioPharmCompany d:"Biotechnology and pharmaceutical company"
 		EquipmentCompany
@@ -11,6 +12,9 @@ Company
 			PCIBoardsProducer
 				VideocardsProducer
 		RealEstateCompany
+	IndustrialPark
+	SEZ deabbr:"Special economic zone"
+	SEZDepartment
 	PensionFund
 	ProfessionalServiceCompany
 		AnalyticsCompany

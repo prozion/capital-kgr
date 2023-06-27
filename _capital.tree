@@ -31,6 +31,10 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 				Revenue
 		ta/Group
 			GroupOfCompanies
+		tabtree/Id
+			SovietId
+			TsarTimeId
+			FormerId
 		Industry
 		Mean
 			Share subclass-of:rdfs/Literal d:"Company share, measured in percentages"
@@ -129,15 +133,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 			Factory
 		Resource
 			Land
-			MineralDeposit
-				GasDeposit
-				CharcoalDeposit
-				KDeposit
-				MgDeposit
-				OilDeposit
-				OreDeposit
-					GoldDeposit
-					SilverDeposit
+			[_deposits_taxonomy.tree]
 		[_companies_taxonomy.tree]
 	properties +a:rdf/Property +hi-inv-rel:subproperty-of
 		abbr eq-property:owl/equivalentProperty
@@ -159,6 +155,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		dept domain:Organization range:Dept
 		end eq-property:time/end
 		equipment-from domain:ProductionUnit range:ProductionUnit
+			prodcap domain:Factory range:Factory d:"uses production lines (capacities) of a targeted factory"
 		f deabbr:"fortune" domain:Person range:MUSD
 		facilities domain:Company range:Company
 		founder domain:Person range:Company
@@ -172,6 +169,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		inc domain:Organization range:Income
 			oinc d:"Operational income - earnings before interest and taxes"
 			pinc d:"Pure income (net income)"
+		ip domain:ProductionUnit range:IndustrialPark
 		lat eq-property:loc/lat
 		license domain:BusinessUnit range:Resource
 		lon eq-property:loc/lon
@@ -179,6 +177,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 			director
 			president 
 		market-share domain:`ProductionUnit,Company` range:Share
+		moved-to domain:ProductionUnit range:ProductionUnit
 		n subproperty-of:ta/metrics domain:Organization
 			branches-n domain:ChainStore
 		old-id eq-property:ta/old-id
@@ -190,7 +189,6 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		place eq-property:loc/place
 		pop eq-property:population
 		population domain:loc/City range:rdfs/Literal
-		prodcap domain:Factory range:Factory d:"uses production lines (capacities) of a targeted factory"
 		product domain:ProductionUnit range:Product
 		proving-ground domain:ProductionUnit range:ProvingGround
 		pt deabbr:"person type" domain:Person range:BusinessOriginType
@@ -211,7 +209,9 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		start eq-property:time/start
 		stop subproperty-of:end-property:time/stop
 		subsidiary-of domain:Company range:Subsidiary
+		sid range:SovietId d:"An idified name the object had in the Soviet time"
 		to range:`Deal` domain:`Businessman`
+		tsid range:TsarTimeId d:"An idified name the object had before the Revolution"
 		unit eq-property:tabtree/unit
 		used-by domain:MineralDeposit range:Company
 		y eq-property:year
