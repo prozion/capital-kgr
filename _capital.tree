@@ -127,6 +127,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 			OilPipeline
 		Post
 		Product
+			Service
 		Property
 			Company
 			Brand
@@ -154,9 +155,10 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		date eq-property:time/date
 		dept domain:Organization range:Dept
 		end eq-property:time/end
-		equipment-from domain:ProductionUnit range:ProductionUnit
-			prodcap domain:Factory range:Factory d:"uses production lines (capacities) of a targeted factory"
 		f deabbr:"fortune" domain:Person range:MUSD
+		facilities-from domain:Company range:ProductionUnit
+			equipment-from domain:ProductionUnit 
+				prodcap domain:Factory range:Factory d:"uses production lines (capacities) of a targeted factory"
 		facilities domain:Company range:Company
 		founder domain:Person range:Company
 		former
@@ -169,6 +171,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		inc domain:Organization range:Income
 			oinc d:"Operational income - earnings before interest and taxes"
 			pinc d:"Pure income (net income)"
+		industry domain:`ProductionUnit,Industry,Product` range:Industry
 		ip domain:ProductionUnit range:IndustrialPark
 		lat eq-property:loc/lat
 		license domain:BusinessUnit range:Resource
@@ -189,10 +192,10 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		place eq-property:loc/place
 		pop eq-property:population
 		population domain:loc/City range:rdfs/Literal
-		product domain:ProductionUnit range:Product
+		prod domain:ProductionUnit range:Product
+		prod-group domain:Product range:Product
 		proving-ground domain:ProductionUnit range:ProvingGround
 		pt deabbr:"person type" domain:Person range:BusinessOriginType
-		raw domain:ProductionUnit range:Product
 		rem eq-property:tabtree/rem
 		research-area doamin:ResearchUnit range:Industry
 		rev domain:Organization range:Revenue
@@ -206,6 +209,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 			minor-share
 		sold domain:Deal range:Mean
 			share-sold range:Share
+		src domain:ProductionUnit range:Product d:"Raw materials for production unit"
 		start eq-property:time/start
 		stop subproperty-of:end-property:time/stop
 		subsidiary-of domain:Company range:Subsidiary
@@ -217,8 +221,10 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		y eq-property:year
 		year eq-property:time/year
 	individuals
-		[deals.tree]
 		[factories.tree]
+		; [industry_products.tree]
+		[industry_factories.tree]
+		; [products.tree] 
 		[companies.tree]
 		[companies_owning.tree]
 		[people.tree]
