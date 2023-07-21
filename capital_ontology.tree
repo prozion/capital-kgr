@@ -1,4 +1,4 @@
-capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on Russian capital"
+capital a:owl/Ontology ns:https://purl.org/capital# rdfs/label:"Knowledge graph on Russian capital"
 	namespaces
 		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
@@ -7,6 +7,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		skos ns:http://www.w3.org/2004/02/skos/core#
 		tabtree ns:https://purl.org/tabtree/core#
 		ta ns:https://purl.org/tabtree/abstract#
+		tm ns:https://purl.org/tabtree/metrics#
 		time ns:https://purl.org/tabtree/time#
 		loc ns:https://purl.org/tabtree/location#
 		pers ns:https://purl.org/tabtree/person#
@@ -14,6 +15,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		src ns:https://purl.org/tabtree/source#
 		media ns:https://purl.org/tabtree/media#
 		geo ns:https://purl.org/geography#
+		xsd ns:http://www.w3.org/2001/XMLSchema#
 	classes +a:owl/Class +hi-inv-rel:subclass-of
 		Brand subclass-of:rdfs/Literal
 		BusinessActivity
@@ -67,6 +69,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 			GRUB
 			MRUB
 			MUSD
+		OKONHCode subclass-of:rdfs/Literal
 		Organization subclass-of:org/Organization
 			BusinessGroup
 				Cartel
@@ -134,17 +137,17 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 			Factory
 		Resource
 			Land
-			[_deposits_taxonomy.tree]
-		[_companies_taxonomy.tree]
+			[deposits_taxonomy.tree]
+		[companies_taxonomy.tree]
 	properties +a:rdf/Property +hi-inv-rel:subproperty-of
 		abbr eq-property:owl/equivalentProperty
-		assets domain:Organization range:Assets
+		assets domain:Organization range:tm/Money
 		brand domain:Organization range:Brand
-		cap domain:Organization range:Capitalization
-			acap d:"Authorised capital","Уставной капитал"@ru
-			ocap d:"Own capital (equity)"
-			mcap d:"Market capitalization"
-		cash domain:Person range:MoneyAmount
+		cap domain:Organization range:tm/Money
+			acap d:"Authorised capital" range:tm/Money ; "Уставной капитал"@ru
+			ocap d:"Own capital (equity)" range:tm/Money
+			mcap d:"Market capitalization" range:tm/Money
+		cash domain:Person range:tm/Money
 		board domain:Person range:Organization
 			chairman
 		city eq-property:loc/City
@@ -168,14 +171,14 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		former-id eq-property:ta/former-id
 		from range:`Deal` domain:`Businessman`
 		hq eq-property:org/hq
-		inc domain:Organization range:Income
-			oinc d:"Operational income - earnings before interest and taxes"
-			pinc d:"Pure income (net income)"
+		inc domain:Organization range:tm/Money
+			oinc d:"Operational income - earnings before interest and taxes" range:tm/Money
+			pinc d:"Pure income (net income)" range:tm/Money
 		industry domain:`ProductionUnit,Industry,Product` range:Industry
 		ip domain:ProductionUnit range:IndustrialPark
-		lat eq-property:loc/lat
+		lat eq-property:loc/lat range:tabtree/Float
 		license domain:BusinessUnit range:Resource
-		lon eq-property:loc/lon
+		lon eq-property:loc/lon range:tabtree/Float
 		manager domain:Person range:Organization
 			director
 			president 
@@ -183,6 +186,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		moved-to domain:ProductionUnit range:ProductionUnit
 		n subproperty-of:ta/metrics domain:Organization
 			branches-n domain:ChainStore
+		okonh domain:Industry range:OKONHCode
 		old-id eq-property:ta/old-id
 		operator domain:Pipeline range:Company
 		owned-by domain:Property range:Organization
@@ -197,37 +201,39 @@ capital a:owl/Ontology ns:https://purl.org/capital# dc/title:"Knowledge graph on
 		proving-ground domain:ProductionUnit range:ProvingGround
 		pt deabbr:"person type" domain:Person range:BusinessOriginType
 		rem eq-property:tabtree/rem
+		repair domain:ProductionUnit range:Product
 		research-area doamin:ResearchUnit range:Industry
-		rev domain:Organization range:Revenue
+		rev domain:Organization range:tm/Money
 		s eq-property:src/source
 			s-wiki
-		s-url subproperty-of:s,media/url
+		s-url subproperty-of:s,media/url range:tabtree/Url
 		share domain:`Person,Company` range:Company
 			owner
 				co-owner
 			prime-share
 			minor-share
+		sid range:SovietId d:"An idified name the object had in the Soviet time"
 		sold domain:Deal range:Mean
 			share-sold range:Share
 		src domain:ProductionUnit range:Product d:"Raw materials for production unit"
-		start eq-property:time/start
-		stop subproperty-of:end-property:time/stop
+		start eq-property:time/start range:time/Year
+		stop subproperty-of:end-property:time/stop range:time/Year
 		subsidiary-of domain:Company range:Subsidiary
-		sid range:SovietId d:"An idified name the object had in the Soviet time"
 		to range:`Deal` domain:`Businessman`
 		tsid range:TsarTimeId d:"An idified name the object had before the Revolution"
 		unit eq-property:tabtree/unit
+		url eq-property:media/url range:media/Url
 		used-by domain:MineralDeposit range:Company
+		w domain:Organization range:tabtree/Integer
 		y eq-property:year
-		year eq-property:time/year
+		year eq-property:time/year range:time/Year
 	individuals
-		[factories.tree]
-		; [industry_products.tree]
-		[industry_factories.tree]
-		; [products.tree] 
-		[companies.tree]
-		[companies_owning.tree]
-		[people.tree]
-		; [places_russia.tree]
-		; [places_world.tree]
-		[sources.tree]
+		; [factories/factories.tree]
+		[companies/companies.tree]
+		; [companies/companies_owning.tree]
+		; [products/product_families.tree]
+		; [products/products_by_okonh.tree]
+		
+		; [places/places_russia.tree]
+		; [places/places_world.tree]
+		; [sources.tree]

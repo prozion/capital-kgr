@@ -22,6 +22,7 @@ companies +a:Company
 	Газпромбанк ocap:739.3G pinc:56G assets:7530G w:19.5K
 	Газпром_нефтехим_Салават w:8726^year:2021
 	Газпром_энергохолдинг ТГК-1:51.79%^year:2021
+	Государственный_космический_НПЦ_им_Хруничева place:Москва start:1916 ocap:8.6G rev:40.6G^year:2011 oinc:~25.2G pinc:~23.2G^year:2017 w:43500^year:2017 
 	Данон_Россия rev:93G w:6.3K
 	Донецкуголь hq:Донецк start:1975
 	Донской_табак hq:Ростов-на-Дону start:1857 rev:13.78G^year:2018,38.87G^year:2020 pinc:-9.86G^year:2018,4.3G^year:20
@@ -32,13 +33,14 @@ companies +a:Company
 	Илим_Коряжма w:5800
 	Илим_Усть-Илимск w:4200
 	Информационные_спутниковые_системы rev:34G^year:2014 w:8K
+	КАМАЗ abbr:КамАЗ place:Набережные_Челны start:1969 ocap:38.8G^year:2019 rev:190G^year:2019 oinc:4.35G^year:2019 pinc:-1.95G^year:2019 assets:206G^year:2021 w:33214^year:2021
 	Каргилл rev:129G w:0.9K
 	Киевская_площадь a:Holding w:25K
 	ЛСР rev:118G w:10K
 	Лукойл ocap:4520G^year:2021 rev:9440G oinc:979G pinc:776G assets:6860G mcap:2810G^year:2022 w:101K
 	Магнитогорский_металлургический_комбинат rev:11.9G$ w:18.6K
-	Марс rev:176G w:3.3K
-	Мегаполис cap:96.1G^y:2021 rev:902.9G^y:2021 inc:19.3G^y:2021
+	Марс_Россия rev:176G w:3.3K
+	Мегаполис cap:96.1G^year:2021 rev:902.9G^year:2021 inc:19.3G^year:2021
 	Мегафон ocap:233G rev:332G oinc:73.4G pinc:26.8G assets:774G mcap:403G^year:2020 w:36.7K
 	Микроген rev:7.6G^year:2013 pinc:1G^year:2013 director:Премьер_министр_РФ w:5000
 	Минпромторг_РФ a:Ministry
@@ -48,6 +50,7 @@ companies +a:Company
 	Морской_порт_в_Бухте_Троицы abbr:МПБТ
 	Московский_институт_теплотехники rev:58G
 	Московский_метрополитен rev:108G pinc:-3G^year:2017 w:53K^year:2017
+	Московское_авиационное_производственное_объединение abbr:МАПО place:Москва start:1909 w:10500 proving-ground:Луховицкий_авиационный_производственно-испытательный_комплекс
 	Мосхимфармпрепараты w:600
 	МТС ocap:14.6G rev:534G oinc:118G pinc:64.3G assets:1020G mcap:683G^year:2021 w:58K^year:2020
 	Настюша hq:Москва start:1992 end:2019
@@ -101,9 +104,10 @@ companies +a:Company
 	ТГК-1 ocap:139G rev:88.9G oinc:10.8G pinc:8.25G assets:191G
 	Титан hq:Омск
 	Транснефть ocap:2200G rev:962G oinc:226G pinc:133G assets:3330G w:119K
+	Удоканская_медь former-id:Байкальская_горная_компания
 	Укроборонпром country:Украина rev:1.3G$^year:2018 w:80K
 	Фармасинтез rev:40.69G^year:2021
-	Фармстандарт cap:62.8G^y:2013 rev:55.9G^y:2013 inc:11.9G^y:2013
+	Фармстандарт cap:62.8G^year:2013 rev:55.9G^year:2013 inc:11.9G^year:2013
 	Ферреро_Руссия rev:50.9G w:541
 	Фонд_национального_благосостояния a:SovereignWealthFund
 	Эфко rev:112G pinc:2G w:17K
