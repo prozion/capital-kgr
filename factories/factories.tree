@@ -383,7 +383,7 @@ factories +a:ProductionUnit
 	Ижевский_радиозавод place:Ижевск start:1958
 	Ижевский_электромеханический_завод_Купол place:Ижевск start:1957 rev:5.235G^year:2011
 	Ижнефтемаш place:Ижевск start:1956 rev:2.593G^year:2021 w:800^year:2021
-	Ижорский_завод place:Колпино start:1722 rev:6/5G^year:2014 w:1600^year:2016
+	Ижорский_завод place:Колпино start:1722 rev:6.5G^year:2014 w:1600^year:2016
 	Изобильненский_сахарный_завод place:Изобильный
 	Изоляционный_трубный_завод place:Пересвет start:2005 rev:4G^year:2012 w:450
 	ИмБио place:Нижний_Новгород
@@ -765,7 +765,7 @@ factories +a:ProductionUnit
 	НПО_Базальт place:Москва start:1916 rev:7.5G^year:2011 w:9.5К prod:Бомба_осколочно-фугасная,Бомба_бетонобойная,Бомба_зажигательная,Мина_артиллерийская,Снаряд_артиллерийский
 	НПО_Биомед place:Пермь
 	НПО_Вирион place:Томск start:1904 rev:1G^year:2004 pinc:500M^year:2004 w:600
-	НПО_им_Лавочкина place:Химки start:1937 ocap:8.97G rev:16/1G oinc:498M pinc:476M^year:2017 parent:Роскосмос
+	НПО_им_Лавочкина place:Химки start:1937 ocap:8.97G rev:16.1G oinc:498M pinc:476M^year:2017 parent:Роскосмос
 	НПО_Красная_Звезда place:Москва start:1972 w:59
 	НПО_Луч place:Подольск start:1946 w:950^year:2019 parent:Росатом
 	НПО_Марс place:Ульяновск start:1961 w:1100^year:2011

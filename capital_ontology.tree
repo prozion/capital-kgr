@@ -1,4 +1,4 @@
-capital a:owl/Ontology ns:https://purl.org/capital# rdfs/label:"Knowledge graph on Russian capital"
+capital a:owl/Ontology ns:https://purl.org/prozion/capital# rdfs/label:"Knowledge graph on Russian capital"
 	namespaces
 		rdf ns:http://www.w3.org/1999/02/22-rdf-syntax-ns#
 		rdfs ns:http://www.w3.org/2000/01/rdf-schema#
@@ -14,7 +14,6 @@ capital a:owl/Ontology ns:https://purl.org/capital# rdfs/label:"Knowledge graph 
 		org ns:https://purl.org/tabtree/organization#
 		src ns:https://purl.org/tabtree/source#
 		media ns:https://purl.org/tabtree/media#
-		geo ns:https://purl.org/geography#
 		xsd ns:http://www.w3.org/2001/XMLSchema#
 	classes +a:owl/Class +hi-inv-rel:subclass-of
 		Brand subclass-of:rdfs/Literal
@@ -157,7 +156,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# rdfs/label:"Knowledge graph 
 		current-person domain:Post range:Person
 		date eq-property:time/date
 		dept domain:Organization range:Dept
-		end eq-property:time/end
+		end eq-property:time/end range:time/Year
 		f deabbr:"fortune" domain:Person range:MUSD
 		facilities-from domain:Company range:ProductionUnit
 			equipment-from domain:ProductionUnit 
@@ -202,7 +201,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# rdfs/label:"Knowledge graph 
 		pt deabbr:"person type" domain:Person range:BusinessOriginType
 		rem eq-property:tabtree/rem
 		repair domain:ProductionUnit range:Product
-		research-area doamin:ResearchUnit range:Industry
+		research-area domain:ResearchUnit range:Industry
 		rev domain:Organization range:tm/Money
 		s eq-property:src/source
 			s-wiki
@@ -215,9 +214,10 @@ capital a:owl/Ontology ns:https://purl.org/capital# rdfs/label:"Knowledge graph 
 		sid range:SovietId d:"An idified name the object had in the Soviet time"
 		sold domain:Deal range:Mean
 			share-sold range:Share
+		sq range:tabtree/Number
 		src domain:ProductionUnit range:Product d:"Raw materials for production unit"
 		start eq-property:time/start range:time/Year
-		stop subproperty-of:end-property:time/stop range:time/Year
+		stop subproperty-of:time/stop range:time/Year
 		subsidiary-of domain:Company range:Subsidiary
 		to range:`Deal` domain:`Businessman`
 		tsid range:TsarTimeId d:"An idified name the object had before the Revolution"
@@ -228,7 +228,7 @@ capital a:owl/Ontology ns:https://purl.org/capital# rdfs/label:"Knowledge graph 
 		y eq-property:year
 		year eq-property:time/year range:time/Year
 	individuals
-		; [factories/factories.tree]
+		[factories/factories.tree]
 		[companies/companies.tree]
 		; [companies/companies_owning.tree]
 		; [products/product_families.tree]

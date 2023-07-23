@@ -1,7 +1,7 @@
 companies +a:Company
 	Агроком hq:Ростов-на-Дону start:2004
 	Алроса rev:217G w:32K^year:2011
-	Альфа-групп a:Consortium
+	Альфа-групп *a:Consortium
 	Арктикуголь hq:Баренцбург start:1931 rev:419M^year:2017 pinc:6.86M^year:2017
 	Астон rev:127.6G w:1.9K
 	АС-Маркет hq:Москва start:1992 w:150
@@ -44,6 +44,7 @@ companies +a:Company
 	Мегафон ocap:233G rev:332G oinc:73.4G pinc:26.8G assets:774G mcap:403G^year:2020 w:36.7K
 	Микроген rev:7.6G^year:2013 pinc:1G^year:2013 director:Премьер_министр_РФ w:5000
 	Минпромторг_РФ a:Ministry
+	; Минфин_РФ a:StateOrganization
 	Минфин_РФ a:StateOrganization
 	Мираторг rev:187G w:1543
 	Мондэлис_Русь rev:92G^year:2022 w:2K
