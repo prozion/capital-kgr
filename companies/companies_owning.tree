@@ -915,7 +915,7 @@ companies +hi-inv-rel:parent
 			Уральский_завод_прецизионных_сплавов
 		Новолипецкий_металлургический_завод
 	НМЖК
-	Новатэк Ямал_СПГ:50.1% Сибнефтегаз:?
+	Новатэк Ямал_СПГ:50.1% Сибнефтегаз:"?"
 		Арктик_СПГ_1
 		Арктик_СПГ_2
 		Арктик_СПГ_3
@@ -954,8 +954,8 @@ companies +hi-inv-rel:parent
 		Яргео
 		Novatek_Asia_Development_Holding
 		Novatek_Equity country:Кипр
-		Novatek_Gas_&_Power_Asia
-		Novatek_Gas_&_Power
+		Novatek_Gas_and_Power_Asia
+		Novatek_Gas_and_Power
 		Novatek_Green_Energy
 		Novatek_Lebanon
 		Novatek_Montenegro
@@ -1172,7 +1172,7 @@ companies +hi-inv-rel:parent
 		Самарский_металлургический_завод
 	Протек
 		АС_Ригла branches-n:3346
-			Будь_здоров!
+			Будь_здоров
 			Живика
 			Маркеты_Ригла
 		ФармФирма_Сотекс
@@ -1747,6 +1747,8 @@ companies +hi-inv-rel:parent
 		Уралвагонзавод
 			Завод_Уралвагонзавод
 			Завод_№9
+		Швабе
+			Новосибирский_приборостроительный_завод
 	Ростовуголь
 		Бугураевуголь
 		Несветайантрацит
@@ -2004,7 +2006,7 @@ companies +hi-inv-rel:parent
 			passion.ru
 			price.ru
 			quto.ru
-			Rambler_&_Co
+			Rambler_and_Co
 			rambler.ru
 				dating.rambler.ru
 				finance.rambler.ru
@@ -2792,7 +2794,7 @@ companies +hi-inv-rel:parent
 		Фабрика_Экстра_М
 	Enel Энел_Россия:56%
 		ЭЛ5-Энерго
-	En+ Quennsland_Alumina_Limited:20%
+	En_plus Quennsland_Alumina_Limited:20%
 		ЕвроСибЭнерго Иркутскэнерго:50.19%
 			Автозаводская_ТЭЦ
 			Ангарская_ТЭЦ-10
@@ -2847,7 +2849,7 @@ companies +hi-inv-rel:parent
 		Союзметаллресурс
 			Жирекенский_ГОК
 			Забайкалстальинвест
-		En+_Downstream
+		En_plus_Downstream
 	Eruditor
 	E-Promo
 	Ferrero
@@ -2893,7 +2895,7 @@ companies +hi-inv-rel:parent
 		Кондитерская_фабрика_Глобус
 		Кондитерская_фабрика_Красная_звезда
 		Кондитерская_фабрика_Озерский_сувенир
-		Сеть_супермаркетов_Ярче!
+		Сеть_супермаркетов_Ярче
 		Сибирский_берег
 		Тепличный_комплекс_Яшкинский_район
 		Яшкинский_пищекомбинат
@@ -2915,7 +2917,7 @@ companies +hi-inv-rel:parent
 			Фабрика_Mars
 	Mercury_Retail
 		Бристоль
-		Красное_&_Белое
+		Красное_and_Белое
 	Mondelez
 		Мондэлис_Русь
 	My.Games

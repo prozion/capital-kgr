@@ -52,7 +52,7 @@ people +a:Billionaire ; M$
 	Фролов_Александр f:2700 Евраз:9.65%
 	Каменщик_Дмитрий f:2600 DME:100%
 	Пономаренко_Александр f:2600 share:TPS_Real_Estate,TPS_Avia
-	Дерипаска_Олег f:2500 owner:En+,Группа_ГАЗ
+	Дерипаска_Олег f:2500 owner:En_plus,Группа_ГАЗ
 	Мошкович_Вадим f:2300 Русагро:49%
 	Авдолян_Альберт f:2200 owner:ЭЛСИ,Якутская_ТЭК
 	Макаров_Игорь f:2200 owner:Арети
@@ -63,7 +63,7 @@ people +a:Billionaire ; M$
 	Светаков_Александр f:2100 Абсолют:94%
 	Хачатрян_Артем f:2100 Fix_Price:35.48%
 	Андреев_Андрей alt:Оганджанянц_Андрей f:2000 founder:MagicLab,Stereo
-	Мамут_Александр f:2000 founder:SUP Полиметалл:9.2%^end:2021 former-co-owner:Rambler Waterstones_Barnes_&_Noble:11%
+	Мамут_Александр f:2000 founder:SUP Полиметалл:9.2%^end:2021 former-co-owner:Rambler Waterstones_Barnes_and_Noble:11%
 	Буйнов_Николай f:1900 Иркутская_нефтяная_компания:67.5%
 	Юшваев_Гаврил f:1900 co-founder:Казино_Метелица former-share:Вимм-Билль-Данн share:Delivery_Hero,Lyft,Комплекс_Око
 	Седых_Анатолий f:1800 owner:Объединенная_металлургическая_компания

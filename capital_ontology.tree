@@ -212,6 +212,10 @@ capital a:owl/Ontology ns:https://purl.org/prozion/capital# rdfs/label:"Knowledg
 			prime-share
 			minor-share
 		sid range:SovietId d:"An idified name the object had in the Soviet time"
+		skos/broaderTransitive a:owl/TransitiveProperty owl/inverseOf:narrowerTransitive
+			skos/broader a:owl/ObjectProperty owl/inverseOf:narrower
+		skos/narrowerTransitive a:owl/TransitiveProperty
+			skos/narrower a:owl/ObjectProperty
 		sold domain:Deal range:Mean
 			share-sold range:Share
 		sq range:tabtree/Number
@@ -230,10 +234,9 @@ capital a:owl/Ontology ns:https://purl.org/prozion/capital# rdfs/label:"Knowledg
 	individuals
 		[factories/factories.tree]
 		[companies/companies.tree]
-		; [companies/companies_owning.tree]
-		; [products/product_families.tree]
-		; [products/products_by_okonh.tree]
-		
-		; [places/places_russia.tree]
-		; [places/places_world.tree]
+		[companies/companies_owning.tree]
+		[products/product_families.tree]
+		[products/products_by_okonh.tree]
+		[places/places_russia.tree]
+		[places/places_world.tree]
 		; [sources.tree]
