@@ -305,6 +305,7 @@ factories +a:ProductionUnit
 	Завод_Карат place:Москва start:1934 rev:4.2G^year:2017 pinc:431M^year:2017 w:0.6К^year:2004
 	Завод_катализаторов place:Омск
 	Завод_Катод place:Новосибирск start:1959 pinc:666.8M^year:2014
+	Завод_Квант place:Зеленоград start:1984 prod:Телевизор,Трекер_автомобильный
 	Завод_Коктебель place:Коктебель start:1944
 	Завод_Комета sid:Новосибирский place:Новосибирск start:1941
 	Завод_Компрессор place:Москва start:1869 pinc:3.4M^year:2009 prod:БМ13_Катюша

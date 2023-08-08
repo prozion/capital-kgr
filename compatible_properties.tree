@@ -1,0 +1,4 @@
+skos/broaderTransitive a:owl/TransitiveProperty owl/inverseOf:narrowerTransitive
+	skos/broader a:owl/ObjectProperty owl/inverseOf:narrower
+skos/narrowerTransitive a:owl/TransitiveProperty
+	skos/narrower a:owl/ObjectProperty

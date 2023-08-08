@@ -5,15 +5,15 @@ capital a:owl/Ontology ns:https://purl.org/prozion/capital# rdfs/label:"Knowledg
 		owl ns:http://www.w3.org/2002/07/owl#
 		dc ns:http://purl.org/dc/elements/1.1/
 		skos ns:http://www.w3.org/2004/02/skos/core#
-		tabtree ns:https://purl.org/tabtree/core#
-		ta ns:https://purl.org/tabtree/abstract#
-		tm ns:https://purl.org/tabtree/metrics#
-		time ns:https://purl.org/tabtree/time#
-		loc ns:https://purl.org/tabtree/location#
-		pers ns:https://purl.org/tabtree/person#
-		org ns:https://purl.org/tabtree/organization#
-		src ns:https://purl.org/tabtree/source#
-		media ns:https://purl.org/tabtree/media#
+		tabtree ns:https://purl.org/prozion/tabtree/core#
+		ta ns:https://purl.org/prozion/tabtree/abstract#
+		tm ns:https://purl.org/prozion/tabtree/metrics#
+		time ns:https://purl.org/prozion/tabtree/time#
+		loc ns:https://purl.org/prozion/tabtree/location#
+		pers ns:https://purl.org/prozion/tabtree/person#
+		org ns:https://purl.org/prozion/tabtree/organization#
+		src ns:https://purl.org/prozion/tabtree/source#
+		media ns:https://purl.org/prozion/tabtree/media#
 		xsd ns:http://www.w3.org/2001/XMLSchema#
 	classes +a:owl/Class +hi-inv-rel:subclass-of
 		Brand subclass-of:rdfs/Literal
@@ -142,6 +142,7 @@ capital a:owl/Ontology ns:https://purl.org/prozion/capital# rdfs/label:"Knowledg
 		abbr eq-property:owl/equivalentProperty
 		assets domain:Organization range:tm/Money
 		brand domain:Organization range:Brand
+		case-of a:owl/TransitiveProperty,owl/ReflexiveProperty owl/inverseOf:narrower d:"substitiution for skos/broader"
 		cap domain:Organization range:tm/Money
 			acap d:"Authorised capital" range:tm/Money ; "Уставной капитал"@ru
 			ocap d:"Own capital (equity)" range:tm/Money
@@ -193,8 +194,7 @@ capital a:owl/Ontology ns:https://purl.org/prozion/capital# rdfs/label:"Knowledg
 		partner a:owl/SymmetricProperty domain:Businessman range:Businessman
 		part-of eq-property:tabtree/part-of
 		place eq-property:loc/place
-		pop eq-property:population
-		population domain:loc/City range:rdfs/Literal
+		pop domain:loc/City range:rdfs/Literal d:"Number of town dwellers (population)"
 		prod domain:ProductionUnit range:Product
 		prod-group domain:Product range:Product
 		proving-ground domain:ProductionUnit range:ProvingGround
@@ -212,10 +212,6 @@ capital a:owl/Ontology ns:https://purl.org/prozion/capital# rdfs/label:"Knowledg
 			prime-share
 			minor-share
 		sid range:SovietId d:"An idified name the object had in the Soviet time"
-		skos/broaderTransitive a:owl/TransitiveProperty owl/inverseOf:narrowerTransitive
-			skos/broader a:owl/ObjectProperty owl/inverseOf:narrower
-		skos/narrowerTransitive a:owl/TransitiveProperty
-			skos/narrower a:owl/ObjectProperty
 		sold domain:Deal range:Mean
 			share-sold range:Share
 		sq range:tabtree/Number
